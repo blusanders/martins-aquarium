@@ -1,2 +1,2 @@
 # martins-aquarium
-# NSS project leanring flexbox
+# NSS project learning flexbox
