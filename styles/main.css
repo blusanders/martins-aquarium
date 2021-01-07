@@ -88,6 +88,12 @@ footer {
   align-content: center;
 }
 
+
+/*tried to center fish image but looked messy. left align looks better.
+/* .image__fishAlign{
+    text-align: center;
+} */
+
 /* fish tips right side */
 .containerRight {
   background-color: plum;
@@ -106,8 +112,13 @@ footer {
 .locationCard__city {
   font-weight: bold;
 }
+
 .quoteCard {
   padding: 10px;
+}
+
+.quoteCard__text{
+    font-style: italic;
 }
 
 .locationCard {
