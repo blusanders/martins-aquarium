@@ -1,4 +1,3 @@
-import { FishList } from "./fishList"
 
 /*
  *  To get you started, here's some properties of Bart.
