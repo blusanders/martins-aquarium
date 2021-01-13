@@ -28,3 +28,4 @@ const tipsCollection = [
 export const useTips = () => {
     return tipsCollection.slice();
 }
+

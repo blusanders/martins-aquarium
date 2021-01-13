@@ -12,7 +12,6 @@ export const TipsList = () => {
     for (const eachTip of allTips){
         tipHTML += Tips(eachTip)
     }
-    console.log(tipHTML)
     contentElement.innerHTML += tipHTML;
 
 }

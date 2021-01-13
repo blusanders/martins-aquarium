@@ -63,18 +63,29 @@ footer {
   padding: 10px;
 }
 
+/* each left article  */
+.contentArticle {
+  /* border: black 1px solid; */ */
+  margin-bottom: 10px;
+}
+
+
+
+/* ***********
+FISH LEFT SIDE
+*********** */
+
 .containerLeft__fishList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-/* each individual fish */
+/* each individual fish card */
 .fishCard {
   padding: 10px;
   margin: 5px;
   background-color: paleturquoise;
-  /* border: black 1px solid; */
   width: 200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -98,13 +109,11 @@ footer {
   align-content: center;
 }
 
+/* ***********
+TIPS RIGHT SIDE
+*********** */
 
-/*tried to center fish image but looked messy. left align looks better.
-/* .image__fishAlign{
-    text-align: center;
-} */
-
-/* fish tips right side */
+/* tips right side */
 .containerRight {
   background-color: plum;
   border-radius: 5px;
@@ -127,13 +136,36 @@ footer {
 }
 
 
-.contentArticle {
-  /* border: black 1px solid;*/ */
-  margin-bottom: 10px;
+/* ***********
+LOCATIONS RIGHT SIDE
+*********** */
+
+/* location container flex   */
+.containerLeft__travelLocations{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.locationCard__city {
+/* each location  */
+.locationCard {
+  padding: 10px;
+  margin: 5px;
+  background-color: lightgoldenrodyellow;
+  width: 100px;
+  height:auto
+  align-self: center;
+  /*border: black 1px solid;*/
+  padding: 10px;
+}
+}
+
+.locationCard__name {
   font-weight: bold;
+}
+
+.locationCard__country {
+font-style: italic;
 }
 
 .quoteCard {
@@ -144,11 +176,8 @@ footer {
   font-style: italic;
 }
 
-.locationCard {
-  padding: 10px;
-}
 
-.locationCard__city{
+.locationCard__name{
     font-weight: bolder;
     font-size: 20px;
   }
