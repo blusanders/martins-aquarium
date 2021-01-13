@@ -23,9 +23,9 @@ const tipsCollection = [
         tipTitle: "Refill the Water",
         tipText: "Description 5"
     }
+]
 
-    export const useTips = () => {
-        return tipsCollection.slice();
-    }
+export const useTips = () => {
+    return tipsCollection.slice();
+}
 
-    
