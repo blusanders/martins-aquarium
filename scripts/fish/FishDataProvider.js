@@ -39,5 +39,5 @@ const fishCollection = [
 ]
 
 export const useFish = () => {
-    return fishCollection.slice();
+    return fishCollection.slice()
 }
