@@ -3,7 +3,7 @@
 import { useTips } from './scripts/tips/tipsDataProvider.js';
 import { Tips } from "./scripts/tips/tips.js";
 
-export const TipsList = () => {
+export const TipList = () => {
 
     const contentElement = document.querySelector(".travelTips");
     const allTips = useTips()
