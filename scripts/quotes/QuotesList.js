@@ -1,6 +1,8 @@
 //render quote list
 
+//get quote array slice copy
 import { useQuotes } from './QuotesDataProvider.js';
+//html render
 import { Quotes } from "./Quotes.js";
 
 export const QuotesList = () => {
@@ -8,12 +10,10 @@ export const QuotesList = () => {
     const contentElement = document.querySelector(".containerLeft__travelQuotes");
     const allQuotes = useQuotes()
 
-    let quotesHTML=""
+    let quotesHTML="";
     for (const eachQuote of allQuotes){
         quoteHTML += Quotes(eachQuote);
     }
     contentElement.innerHTML += quotesHTML;
 
 }
-
-

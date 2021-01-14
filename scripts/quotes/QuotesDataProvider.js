@@ -16,8 +16,8 @@ const quotesCollection = [
         author:"Deep Guy",
         location:"El Paso, TX",
         date:"1/1/1002",
-    },
-    
+    }
+       
 ]
 
     export const useQuotes = () => {
