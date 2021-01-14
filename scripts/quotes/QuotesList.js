@@ -12,7 +12,7 @@ export const QuotesList = () => {
 
     let quotesHTML="";
     for (const eachQuote of allQuotes){
-        quoteHTML += Quotes(eachQuote);
+        quotesHTML += Quotes(eachQuote);
     }
     contentElement.innerHTML += quotesHTML;
 

@@ -182,34 +182,32 @@ font-style: italic;
 QUOTES LEFT SIDE
 *********** */
 
-.quoteCard {
-  padding: 10px;
+/* quote container flex   */
+.containerLeft__travelQuotes{
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  /* border:black 1px solid; */
 }
 
+/* each quote  */
+.quoteCard {
+  padding: 10px;
+  align-self: center;
+  text-align: center;
+  font-size: 15px;
+  /*border: black 1px solid;*/
+}
+
+/* actual quote  */
 .quoteCard__text{
   font-style: italic;
 }
 
-
-/* location container flex   */
-.containerLeft__travelQuotes{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.quoteCard__location{
+  font-size: 10px;
 }
-
-/* each location  */
-.quoteCard {
-  padding: 10px;
-  align-self: center;
-  /*border: black 1px solid;*/
-}
-
-.quoteCard__text {
-  font-weight: bold;
-}
-
 
 
 /* ***********
