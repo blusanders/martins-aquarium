@@ -1,6 +1,7 @@
 //Fish returns each fish card HTML
 
-export const Fish = (fish) => {
+export const Fish = (fish,holiness) => {
+
     return `
     <div class="fishCard">
 
@@ -8,8 +9,10 @@ export const Fish = (fish) => {
     <p class="fishCard__name">${fish.name}</p>
     <p class="fishCard__species">Species: ${fish.species}</p>
     <p class="fishCard__location">Location: ${fish.location}</p>
+    <p class="fishCard__location">Diet: ${fish.food}</p>
     <p class="fishCard__length">Size: ${fish.size}</p>
-
+    <p class="fishCard__holiness">${holiness}</p>
+    
     </div>
     `
 }

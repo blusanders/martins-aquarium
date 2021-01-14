@@ -95,6 +95,7 @@ FISH LEFT SIDE
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
+  font-size: 13px;
   /* resize: both;
   overflow: auto; */
 }
@@ -108,36 +109,15 @@ FISH LEFT SIDE
   font-size: 20px;
 }
 
+.fishCard__holiness{
+  font-weight: bolder;
+  color:darkgoldenrod
+}
+
 .image__fishCards {
   max-width: 150px;
   border-radius: 5px 5px;
   align-content: center;
-}
-
-/* ***********
-TIPS RIGHT SIDE
-*********** */
-
-/* tips right side */
-.containerRight {
-  background-color: plum;
-  border-radius: 5px;
-  margin-left: 10px;
-  flex-grow: 1;
-  /*border: black 1px solid;*/
-  padding: 10px;
-}
-
-.tipCard__tipTitle {
-/* font-weight: bolder; */
-  font-size: 20px;
-  /* padding: 10px; */
-}
-
-.tipCard__tipText{
-  font-size: 15px;
-  /* padding: 10px; */
-  margin-bottom: 10px;
 }
 
 
@@ -209,6 +189,31 @@ QUOTES LEFT SIDE
   font-size: 10px;
 }
 
+/* ***********
+TIPS RIGHT SIDE
+*********** */
+
+/* tips right side */
+.containerRight {
+  background-color: plum;
+  border-radius: 5px;
+  margin-left: 10px;
+  flex-grow: 1;
+  /*border: black 1px solid;*/
+  padding: 10px;
+}
+
+.tipCard__tipTitle {
+/* font-weight: bolder; */
+  font-size: 20px;
+  /* padding: 10px; */
+}
+
+.tipCard__tipText{
+  font-size: 15px;
+  /* padding: 10px; */
+  margin-bottom: 10px;
+}
 
 /* ***********
 FOOTER BOTTOM
