@@ -7,3 +7,5 @@ TipsList();
 import { LocationsList } from "./locations/LocationList.js";
 LocationsList();
 
+import { QuotesList } from "./quotes/QuotesList.js";
+QuotesList();
