@@ -10,37 +10,48 @@ import { Fish } from "./Fish.js";
 
 export const FishList = () => {
 
-    // find first element of class .containerLeft__fishList
     const contentElement = document.querySelector(".containerLeft__fishList");
-    // useFish provides the array of fish data
     
-    //NO LONGER NEED ENTIRE ARRAY
+    //display mod 3 fish first
+    const fishes = mostHolyFish()
+    contentElement.innerHTML += fishes.map(fish => Fish(fish,"Holy")).join("")
+    // for (const fish of fishes){
+    //     contentElement.innerHTML += Fish(fish,"Holy")
+    // }
+
+    //display mod 5 fish next
+    const soldiersArray = soldierFish()
+    contentElement.innerHTML += soldiersArray.map(fish => Fish(fish,"Soldier")).join("")
+
+    //display rest of fish
+    const notHolyArray = nonHolyFish()
+    contentElement.innerHTML += notHolyArray.map(fish => Fish(fish,"Not Holy")).join("")
+}
+
+
+
+
+
+
+
+//NO LONGER NEED ENTIRE ARRAY
     // const fishes = useFish()
     // let fishHTML = ""
     // for (const fish of fishes){
     //     fishHTML += Fish(fish)
     // }
 
-    //display mod 3 fish first
-    const fishes = mostHolyFish()
-    let fishHTML = ""
-    for (const fish of fishes){
-        fishHTML += Fish(fish,"Holy")
-    }
+        // for (const fish of fishes){
+    //     fishHTML += Fish(fish,"Holy")
+    // }
 
-    //display mod 5 fish next
-    const soldiersArray = soldierFish()
-    for (const fish of soldiersArray){
-        fishHTML += Fish(fish,"Soldier")
-    }
+  // for (const fish of soldiersArray){
+    //     fishHTML += Fish(fish,"Soldier")
+    // }
 
-    const nonHolyArray = nonHolyFish()
-    //display all other fish last
-    for (const fish of nonHolyArray){
-        fishHTML += Fish(fish,"Not Holy")
-    }
+        //display all other fish last
+    // for (const fish of nonHolyArray){
+    //     fishHTML += Fish(fish,"Not Holy")
+    // }
 
-    contentElement.innerHTML += fishHTML;
-
-}
-
+    //contentElement.innerHTML += fishHTML;
