@@ -69,7 +69,7 @@ export const useFish = () => {
     return fishCollection.slice()
 }
 
-   
+
 //returns only fish divisible by THREE
 // 3, 6, 9, 12, etc... fish
 export const mostHolyFish = () => {
@@ -80,9 +80,11 @@ export const mostHolyFish = () => {
             holyFish.push(eachFish);
         }
     }
+    console.table(holyFish)
     return holyFish;
 }
 
+//returns only fish divisible by FIVE
 export const soldierFish = () => {
     // 5, 10, 15, 20, 25, etc... fish
     const soldiers = []
@@ -91,6 +93,7 @@ export const soldierFish = () => {
             soldiers.push(eachFish);
         }
     }
+    console.table(soldiers)
     return soldiers
 }
 
